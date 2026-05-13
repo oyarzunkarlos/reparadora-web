@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reparadora de Calzados y Ortopedia - Expertos en reparación de calzado y artículos ortopédicos. Calidad garantizada.">
+    <meta name="keywords" content="reparación calzado, zapatería, ortopedia, suelas, tacón">
+    <meta property="og:title" content="Reparadora de Calzados y Ortopedia">
+    <meta property="og:description" content="Expertos en reparación de calzado y artículos ortopédicos">
+    <meta property="og:type" content="website">
+    <title>Reparadora de Calzados y Ortopedia | Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B4513',
+                        secondary: '#D2691E',
+                        accent: '#F4A460',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        #mobile-menu {
+            transition: max-height 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        #mobile-menu.open { max-height: 200px; }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <header class="bg-primary text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold hover:text-accent transition-colors">🔧 Reparadora Express</a>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#inicio" class="hover:text-accent transition-colors">Inicio</a></li>
+                    <li><a href="#servicios" class="hover:text-accent transition-colors">Servicios</a></li>
+                    <li><a href="#nosotros" class="hover:text-accent transition-colors">Nosotros</a></li>
+                    <li><a href="#contacto" class="hover:text-accent transition-colors">Contacto</a></li>
+                </ul>
+                <button id="menu-toggle" class="md:hidden focus:outline-none" aria-label="Abrir menú">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </nav>
+            <div id="mobile-menu" class="md:hidden">
+                <ul class="pt-4 space-y-2">
+                    <li><a href="#inicio" class="block hover:text-accent transition-colors">Inicio</a></li>
+                    <li><a href="#servicios" class="block hover:text-accent transition-colors">Servicios</a></li>
+                    <li><a href="#nosotros" class="block hover:text-accent transition-colors">Nosotros</a></li>
+                    <li><a href="#contacto" class="block hover:text-accent transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="inicio" class="bg-gradient-to-b from-secondary to-primary text-white py-20 md:py-32">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Expertos en Reparación de Calzado</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Devolvemos la vida a tus zapatos favoritos. Calidad, rapidez y garantía en cada trabajo.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#contacto" class="bg-accent text-primary font-bold py-3 px-8 rounded-lg hover:bg-white transition-colors">Pedir Presupuesto</a>
+                    <a href="#servicios" class="border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-primary transition-colors">Ver Servicios</a>
+                </div>
+            </div>
+        </section>
+        <section id="servicios" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Nuestros Servicios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">👞</div>
+                        <h3 class="text-xl font-bold mb-2 text-secondary">Reparación de Calzado</h3>
+                        <p class="text-gray-600">Cambio de suelas, tacones, costuras y restauración completa.</p>
+                    </article>
+                    <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">🦽</div>
+                        <h3 class="text-xl font-bold mb-2 text-secondary">Artículos Ortopédicos</h3>
+                        <p class="text-gray-600">Reparación y ajuste de productos ortopédicos y de movilidad.</p>
+                    </article>
+                    <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">👜</div>
+                        <h3 class="text-xl font-bold mb-2 text-secondary">Marroquinería</h3>
+                        <p class="text-gray-600">Arreglo de carteras, cinturones y otros accesorios de cuero.</p>
+                    </article>
+                    <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">⚡</div>
+                        <h3 class="text-xl font-bold mb-2 text-secondary">Servicio Express</h3>
+                        <p class="text-gray-600">Reparaciones en el día para que no pierdas tiempo.</p>
+                    </article>
+                    <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">🎨</div>
+                        <h3 class="text-xl font-bold mb-2 text-secondary">Tintura y Personalización</h3>
+                        <p class="text-gray-600">Cambio de color y personalización de calzado.</p>
+                    </article>
+                    <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">📦</div>
+                        <h3 class="text-xl font-bold mb-2 text-secondary">Recogida a Domicilio</h3>
+                        <p class="text-gray-600">Te recogemos y entregamos tu calzado en casa.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="nosotros" class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary">Sobre Nosotros</h2>
+                    <p class="text-lg text-gray-700 mb-6">Con más de 20 años de experiencia en el sector, somos tu taller de confianza para la reparación de calzado y artículos ortopédicos. Nuestro compromiso es ofrecer un servicio de calidad, rápido y con garantía.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                        <div class="text-center"><div class="text-4xl font-bold text-secondary mb-2">+20</div><div class="text-gray-600">Años de Experiencia</div></div>
+                        <div class="text-center"><div class="text-4xl font-bold text-secondary mb-2">+5000</div><div class="text-gray-600">Clientes Satisfechos</div></div>
+                        <div class="text-center"><div class="text-4xl font-bold text-secondary mb-2">100%</div><div class="text-gray-600">Garantía de Calidad</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Contacto</h2>
+                <div class="max-w-2xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="text-center p-4 bg-white rounded-lg shadow">
+                            <div class="text-2xl mb-2">📍</div>
+                            <h3 class="font-bold mb-1">Dirección</h3>
+                            <p class="text-gray-600">Calle Principal 123<br>Ciudad, País</p>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow">
+                            <div class="text-2xl mb-2">📞</div>
+                            <h3 class="font-bold mb-1">Teléfono</h3>
+                            <p class="text-gray-600">+1 234 567 890</p>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label for="nombre" class="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="tu@email.com">
+                        </div>
+                        <div class="mb-4">
+                            <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white font-bold py-3 px-4 rounded-lg hover:bg-secondary transition-colors">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 Reparadora de Calzados y Ortopedia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
